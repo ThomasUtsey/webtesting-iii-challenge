@@ -10,18 +10,5 @@ describe ('snapshot <Dashboard/>',()=>{
 
     expect (tree.toJSON()).toMatchSnapshot();
   });
-
-  it ('is mocking me',()=>{
-    const mock = jest.fn();
-
-    const result = mock();
-
-    expect(result).toBeUndefined();
-    expect(mock).toHaveBeenCalled();
-    expect(mock).toHaveBeenCalledTimes(1);
-  });
-
-  it('is mocking me even more',()=>{
-    const mock = jest.fn(()=>'hello')
-  })
-});
+})
+ 
