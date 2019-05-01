@@ -12,10 +12,8 @@ describe ('snapshot <Controls/>',()=>{
   });
   
   test('close gate button by default',()=>{
-    
     const { getByText } = render(<Controls/>)
     expect(getByText(/Close Gate/i))
-  
   })
  
     it ('should close the gate on click and change button to Open Gate',()=>{
